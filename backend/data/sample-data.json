@@ -1,0 +1,323 @@
+{
+  "categories": [
+    {
+      "name": "Electronics",
+      "slug": "electronics",
+      "description": "Latest electronic gadgets and devices",
+      "isActive": true
+    },
+    {
+      "name": "Fashion",
+      "slug": "fashion",
+      "description": "Trendy clothing and accessories",
+      "isActive": true
+    },
+    {
+      "name": "Home & Living",
+      "slug": "home-living",
+      "description": "Everything for your home",
+      "isActive": true
+    },
+    {
+      "name": "Sports",
+      "slug": "sports",
+      "description": "Sports equipment and accessories",
+      "isActive": true
+    },
+    {
+      "name": "Books",
+      "slug": "books",
+      "description": "Wide collection of books",
+      "isActive": true
+    }
+  ],
+  "products": [
+    {
+      "name": "Wireless Headphones Pro",
+      "slug": "wireless-headphones-pro",
+      "description": "Premium wireless headphones with active noise cancellation and 30-hour battery life. Features include spatial audio, adaptive EQ, and seamless device switching.",
+      "price": 299.99,
+      "compareAtPrice": 349.99,
+      "stock": 50,
+      "brand": "TechSound",
+      "sku": "WHP-001",
+      "tags": ["audio", "wireless", "premium"],
+      "isFeatured": true,
+      "isActive": true,
+      "rating": 4.5,
+      "numReviews": 0,
+      "specifications": {
+        "Battery Life": "30 hours",
+        "Connectivity": "Bluetooth 5.0",
+        "Weight": "250g",
+        "Color": "Black"
+      }
+    },
+    {
+      "name": "Smart Watch Ultra",
+      "slug": "smart-watch-ultra",
+      "description": "Advanced smartwatch with health monitoring, GPS, and water resistance up to 50m. Track your fitness, monitor your heart rate, and receive notifications on your wrist.",
+      "price": 399.99,
+      "compareAtPrice": 449.99,
+      "stock": 35,
+      "brand": "WearTech",
+      "sku": "SWU-002",
+      "tags": ["smartwatch", "fitness", "health"],
+      "isFeatured": true,
+      "isActive": true,
+      "rating": 4.7,
+      "numReviews": 0,
+      "specifications": {
+        "Display": "1.9 inch AMOLED",
+        "Battery": "48 hours",
+        "Water Resistance": "50m",
+        "Sensors": "Heart rate, GPS, Altimeter"
+      }
+    },
+    {
+      "name": "Laptop Stand Aluminum",
+      "slug": "laptop-stand-aluminum",
+      "description": "Ergonomic aluminum laptop stand with adjustable height and angle. Compatible with all laptops from 10 to 17 inches. Improves posture and reduces neck strain.",
+      "price": 49.99,
+      "stock": 100,
+      "brand": "ErgoDesk",
+      "sku": "LSA-003",
+      "tags": ["accessories", "ergonomic", "laptop"],
+      "isFeatured": false,
+      "isActive": true,
+      "rating": 4.3,
+      "numReviews": 0,
+      "specifications": {
+        "Material": "Aluminum Alloy",
+        "Compatibility": "10-17 inch laptops",
+        "Adjustable Height": "Yes",
+        "Weight": "800g"
+      }
+    },
+    {
+      "name": "USB-C Hub 7-in-1",
+      "slug": "usb-c-hub-7-in-1",
+      "description": "Multiport USB-C hub with HDMI, USB 3.0, SD card reader, and 100W power delivery. Perfect for MacBook and other USB-C devices.",
+      "price": 59.99,
+      "compareAtPrice": 79.99,
+      "stock": 75,
+      "brand": "ConnectPro",
+      "sku": "UCH-004",
+      "tags": ["accessories", "usb-c", "hub"],
+      "isFeatured": false,
+      "isActive": true,
+      "rating": 4.4,
+      "numReviews": 0,
+      "specifications": {
+        "Ports": "7 (HDMI, 3x USB 3.0, SD/TF, USB-C PD)",
+        "Power Delivery": "100W",
+        "4K Support": "Yes",
+        "Material": "Aluminum"
+      }
+    },
+    {
+      "name": "Wireless Charging Pad",
+      "slug": "wireless-charging-pad",
+      "description": "Fast wireless charging pad compatible with all Qi-enabled devices. Sleek design with LED indicator and overcharge protection.",
+      "price": 29.99,
+      "stock": 120,
+      "brand": "ChargeFast",
+      "sku": "WCP-005",
+      "tags": ["charging", "wireless", "accessories"],
+      "isFeatured": false,
+      "isActive": true,
+      "rating": 4.2,
+      "numReviews": 0,
+      "specifications": {
+        "Charging Speed": "15W Max",
+        "Compatibility": "Qi-enabled devices",
+        "Cable": "USB-C included",
+        "Safety": "Overcharge protection"
+      }
+    },
+    {
+      "name": "Bluetooth Speaker Waterproof",
+      "slug": "bluetooth-speaker-waterproof",
+      "description": "Portable Bluetooth speaker with 360-degree sound and IPX7 waterproof rating. 12-hour battery life and built-in microphone for hands-free calls.",
+      "price": 79.99,
+      "compareAtPrice": 99.99,
+      "stock": 60,
+      "brand": "SoundWave",
+      "sku": "BSW-006",
+      "tags": ["audio", "bluetooth", "waterproof"],
+      "isFeatured": true,
+      "isActive": true,
+      "rating": 4.6,
+      "numReviews": 0,
+      "specifications": {
+        "Battery Life": "12 hours",
+        "Waterproof": "IPX7",
+        "Bluetooth": "5.0",
+        "Sound": "360-degree"
+      }
+    },
+    {
+      "name": "4K Webcam Pro",
+      "slug": "4k-webcam-pro",
+      "description": "Professional 4K webcam with auto-focus, noise-canceling microphone, and adjustable field of view. Perfect for video conferencing and streaming.",
+      "price": 149.99,
+      "stock": 40,
+      "brand": "VisionCam",
+      "sku": "WCP-007",
+      "tags": ["webcam", "4k", "streaming"],
+      "isFeatured": false,
+      "isActive": true,
+      "rating": 4.5,
+      "numReviews": 0,
+      "specifications": {
+        "Resolution": "4K 30fps",
+        "Microphone": "Dual noise-canceling",
+        "Field of View": "90°",
+        "Mount": "Universal clip"
+      }
+    },
+    {
+      "name": "Mechanical Keyboard RGB",
+      "slug": "mechanical-keyboard-rgb",
+      "description": "Gaming mechanical keyboard with customizable RGB backlighting and blue switches. Full-size layout with dedicated media keys and wrist rest.",
+      "price": 129.99,
+      "compareAtPrice": 159.99,
+      "stock": 45,
+      "brand": "GameType",
+      "sku": "MKR-008",
+      "tags": ["keyboard", "gaming", "rgb"],
+      "isFeatured": true,
+      "isActive": true,
+      "rating": 4.8,
+      "numReviews": 0,
+      "specifications": {
+        "Switch Type": "Blue Mechanical",
+        "Backlighting": "RGB Customizable",
+        "Layout": "Full-size (104 keys)",
+        "Features": "Media keys, wrist rest"
+      }
+    },
+    {
+      "name": "Gaming Mouse Wireless",
+      "slug": "gaming-mouse-wireless",
+      "description": "High-precision wireless gaming mouse with 16000 DPI sensor and programmable buttons. Ergonomic design with customizable RGB lighting.",
+      "price": 69.99,
+      "stock": 80,
+      "brand": "GameType",
+      "sku": "GMW-009",
+      "tags": ["mouse", "gaming", "wireless"],
+      "isFeatured": false,
+      "isActive": true,
+      "rating": 4.4,
+      "numReviews": 0,
+      "specifications": {
+        "DPI": "16000 max",
+        "Buttons": "8 programmable",
+        "Battery": "70 hours",
+        "Connectivity": "2.4GHz + Bluetooth"
+      }
+    },
+    {
+      "name": "Monitor 27 inch 4K",
+      "slug": "monitor-27-inch-4k",
+      "description": "27-inch 4K UHD monitor with IPS panel and HDR support. 99% sRGB color gamut and adjustable stand for perfect viewing angles.",
+      "price": 449.99,
+      "compareAtPrice": 549.99,
+      "stock": 25,
+      "brand": "ViewPro",
+      "sku": "M27-010",
+      "tags": ["monitor", "4k", "display"],
+      "isFeatured": true,
+      "isActive": true,
+      "rating": 4.7,
+      "numReviews": 0,
+      "specifications": {
+        "Screen Size": "27 inch",
+        "Resolution": "3840x2160 (4K)",
+        "Panel Type": "IPS",
+        "Refresh Rate": "60Hz",
+        "HDR": "Yes"
+      }
+    },
+    {
+      "name": "Phone Case Leather Premium",
+      "slug": "phone-case-leather-premium",
+      "description": "Genuine leather phone case with card slots and magnetic closure. Slim profile with premium craftsmanship and RFID protection.",
+      "price": 39.99,
+      "stock": 150,
+      "brand": "LeatherCraft",
+      "sku": "PCL-011",
+      "tags": ["accessories", "phone", "leather"],
+      "isFeatured": false,
+      "isActive": true,
+      "rating": 4.3,
+      "numReviews": 0,
+      "specifications": {
+        "Material": "Genuine Leather",
+        "Card Slots": "3",
+        "RFID Protection": "Yes",
+        "Closure": "Magnetic"
+      }
+    },
+    {
+      "name": "Desk Lamp LED Smart",
+      "slug": "desk-lamp-led-smart",
+      "description": "Smart LED desk lamp with adjustable brightness and color temperature. Touch controls and USB charging port. Perfect for reading and working.",
+      "price": 59.99,
+      "stock": 70,
+      "brand": "BrightWork",
+      "sku": "DLS-012",
+      "tags": ["lamp", "led", "smart"],
+      "isFeatured": false,
+      "isActive": true,
+      "rating": 4.5,
+      "numReviews": 0,
+      "specifications": {
+        "Light Modes": "3 color temperatures",
+        "Brightness Levels": "5",
+        "USB Port": "Yes",
+        "Control": "Touch"
+      }
+    }
+  ],
+  "users": [
+    {
+      "name": "Admin User",
+      "email": "admin@ecommerce.com",
+      "password": "Admin@123456",
+      "role": "admin",
+      "phone": "+1234567890",
+      "isVerified": true
+    },
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "User@123456",
+      "role": "user",
+      "phone": "+1234567891",
+      "isVerified": true,
+      "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10001",
+        "country": "USA"
+      }
+    },
+    {
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "User@123456",
+      "role": "user",
+      "phone": "+1234567892",
+      "isVerified": true,
+      "address": {
+        "street": "456 Oak Ave",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zipCode": "90001",
+        "country": "USA"
+      }
+    }
+  ]
+}
