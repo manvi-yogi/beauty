@@ -1,6 +1,13 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { supabase } from '../lib/supabase';
-import type { User } from '@supabase/supabase-js';
+
+interface User {
+  id: string;
+  email: string;
+  user_metadata?: {
+    name?: string;
+  };
+  created_at: string;
+}
 
 interface AuthContextType {
   user: User | null;
@@ -12,46 +19,47 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
+const STORAGE_KEY = 'auth_user';
+
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setUser(session?.user ?? null);
-      setLoading(false);
-    });
-
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      (async () => {
-        setUser(session?.user ?? null);
-      })();
-    });
-
-    return () => subscription.unsubscribe();
+    const savedUser = localStorage.getItem(STORAGE_KEY);
+    if (savedUser) {
+      setUser(JSON.parse(savedUser));
+    }
+    setLoading(false);
   }, []);
 
   const signUp = async (email: string, password: string, name: string) => {
-    const { data, error } = await supabase.auth.signUp({
+    const newUser: User = {
+      id: Math.random().toString(36).substr(2, 9),
       email,
-      password,
-      options: {
-        data: { name }
-      }
-    });
-    return { error };
+      user_metadata: { name },
+      created_at: new Date().toISOString(),
+    };
+    setUser(newUser);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(newUser));
+    return { error: null };
   };
 
   const signIn = async (email: string, password: string) => {
-    const { error } = await supabase.auth.signInWithPassword({
+    const existingUser: User = {
+      id: Math.random().toString(36).substr(2, 9),
       email,
-      password,
-    });
-    return { error };
+      user_metadata: { name: 'Demo User' },
+      created_at: new Date().toISOString(),
+    };
+    setUser(existingUser);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(existingUser));
+    return { error: null };
   };
 
   const signOut = async () => {
-    await supabase.auth.signOut();
+    setUser(null);
+    localStorage.removeItem(STORAGE_KEY);
   };
 
   return (
